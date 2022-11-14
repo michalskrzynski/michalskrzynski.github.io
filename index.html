@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="header">
+      <nav>
+        <div><h1>Michal's Portfolio</h1></div>
+        <div class="menu">
+          <div><a href="#aboutMe">About Me</a></div>
+          <div><a href="#introduction">Introduction</a></div>
+          <div><a href="#">Projects</a>
+            <img class="bootstrapped" src="./bootstrap-logo.png" height="20px" title="Subpage designed with Bootstrap.">
+          </div>
+        </div>
+      </nav>
+    </div>
+    <div class="grid-layout">
+      <div class="leftspace"></div>
+      <div id="aboutMe" class="content">
+        <div class="section">
+          <img
+            class="profile-picture shadowed"
+            src="./profile.jpeg"
+            alt="Michal's profile picture"
+            width="160"
+            height="160"
+          />
+          <div class="hi-there">
+            <h2>Hi There (Bio)!</h2>
+            <p>
+              Good to see you on my personal profile page. I'm a used-to-be
+              developer, currently a wanna-be. I graduated from Warsaw
+              University of Technology, but shortly after moved to business, and
+              then to investments. Around 12 years ago I coded in Java and PHP,
+              mostly backend. Now I'm excited to be on my way to become a full
+              stack developer, to start doing what I really like. I feel best
+              at: html+css, javascript, php, sql. I'm super excited to get know
+              React soon!
+            </p>
+            <p class="right"><span class="email-left">michal.skrzynski</span><span class="email-right">gm</span></p>
+            <p class="right">github: <a href="https://github.com/michalskrzynski">michalskrzynski</a></p>
+          </div>
+        </div>
+
+        <div id="introduction" class="section shadowed textured">
+          <div class="introduction">
+            <div><h2>Video Introduction</h2></div>
+
+            <div class="introduction-text">
+              <p>
+                Video might be cool to watch (or not ;) ). Anyway if you prefer
+                to read instead of watch this here's the transcript...
+              </p>
+              <div class="introduction-transcipt"></div>
+            </div>
+            <div class="introduction-video">
+              <iframe
+                height="100%"
+                width="100%"
+                src="https://www.youtube.com/embed/pbsPQ0teF14"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+              ></iframe>
+            </div>
+          </div>
+        </div>
+
+        <div class="section">
+          <div class="this-page">
+            <h2>This page</h2>
+            <h3>
+              Believe it or not, this page is a project too! It is to present
+              some vanilla CSS skills. Like:
+            </h3>
+            <ul>
+              <li>
+                <div>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    class="bi bi-grid-1x2-fill"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M0 1a1 1 0 0 1 1-1h5a1 1 0 0 1 1 1v14a1 1 0 0 1-1 1H1a1 1 0 0 1-1-1V1zm9 0a1 1 0 0 1 1-1h5a1 1 0 0 1 1 1v5a1 1 0 0 1-1 1h-5a1 1 0 0 1-1-1V1zm0 9a1 1 0 0 1 1-1h5a1 1 0 0 1 1 1v5a1 1 0 0 1-1 1h-5a1 1 0 0 1-1-1v-5z"
+                    />
+                  </svg>
+                </div>
+                <div>CSS Grid - page layout and the layout of Introduction</div>
+              </li>
+              <li>
+                <div>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    class="bi bi-view-list"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M3 4.5h10a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2zm0 1a1 1 0 0 0-1 1v3a1 1 0 0 0 1 1h10a1 1 0 0 0 1-1v-3a1 1 0 0 0-1-1H3zM1 2a.5.5 0 0 1 .5-.5h13a.5.5 0 0 1 0 1h-13A.5.5 0 0 1 1 2zm0 12a.5.5 0 0 1 .5-.5h13a.5.5 0 0 1 0 1h-13A.5.5 0 0 1 1 14z"
+                    />
+                  </svg>
+                </div>
+                <div>Flexbox - header and nav elements distribution</div>
+              </li>
+              <li>
+                <div>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    class="bi bi-braces"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M2.114 8.063V7.9c1.005-.102 1.497-.615 1.497-1.6V4.503c0-1.094.39-1.538 1.354-1.538h.273V2h-.376C3.25 2 2.49 2.759 2.49 4.352v1.524c0 1.094-.376 1.456-1.49 1.456v1.299c1.114 0 1.49.362 1.49 1.456v1.524c0 1.593.759 2.352 2.372 2.352h.376v-.964h-.273c-.964 0-1.354-.444-1.354-1.538V9.663c0-.984-.492-1.497-1.497-1.6zM13.886 7.9v.163c-1.005.103-1.497.616-1.497 1.6v1.798c0 1.094-.39 1.538-1.354 1.538h-.273v.964h.376c1.613 0 2.372-.759 2.372-2.352v-1.524c0-1.094.376-1.456 1.49-1.456V7.332c-1.114 0-1.49-.362-1.49-1.456V4.352C13.51 2.759 12.75 2 11.138 2h-.376v.964h.273c.964 0 1.354.444 1.354 1.538V6.3c0 .984.492 1.497 1.497 1.6z"
+                    />
+                  </svg>
+                </div>
+                <div>multiple stylings</div>
+              </li>
+              <li>
+                <div>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    class="bi bi-file-font-fill"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M12 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zM5.057 4h5.886L11 6h-.5c-.18-1.096-.356-1.192-1.694-1.235l-.298-.01v6.09c0 .47.1.582.903.655v.5H6.59v-.5c.799-.073.898-.184.898-.654V4.755l-.293.01C5.856 4.808 5.68 4.905 5.5 6H5l.057-2z"
+                    />
+                  </svg>
+                </div>
+                <div>custom font</div>
+              </li>
+              <li>
+                <div>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    class="bi bi-hand-index"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M6.75 1a.75.75 0 0 1 .75.75V8a.5.5 0 0 0 1 0V5.467l.086-.004c.317-.012.637-.008.816.027.134.027.294.096.448.182.077.042.15.147.15.314V8a.5.5 0 1 0 1 0V6.435a4.9 4.9 0 0 1 .106-.01c.316-.024.584-.01.708.04.118.046.3.207.486.43.081.096.15.19.2.259V8.5a.5.5 0 0 0 1 0v-1h.342a1 1 0 0 1 .995 1.1l-.271 2.715a2.5 2.5 0 0 1-.317.991l-1.395 2.442a.5.5 0 0 1-.434.252H6.035a.5.5 0 0 1-.416-.223l-1.433-2.15a1.5 1.5 0 0 1-.243-.666l-.345-3.105a.5.5 0 0 1 .399-.546L5 8.11V9a.5.5 0 0 0 1 0V1.75A.75.75 0 0 1 6.75 1zM8.5 4.466V1.75a1.75 1.75 0 1 0-3.5 0v5.34l-1.2.24a1.5 1.5 0 0 0-1.196 1.636l.345 3.106a2.5 2.5 0 0 0 .405 1.11l1.433 2.15A1.5 1.5 0 0 0 6.035 16h6.385a1.5 1.5 0 0 0 1.302-.756l1.395-2.441a3.5 3.5 0 0 0 .444-1.389l.271-2.715a2 2 0 0 0-1.99-2.199h-.581a5.114 5.114 0 0 0-.195-.248c-.191-.229-.51-.568-.88-.716-.364-.146-.846-.132-1.158-.108l-.132.012a1.26 1.26 0 0 0-.56-.642 2.632 2.632 0 0 0-.738-.288c-.31-.062-.739-.058-1.05-.046l-.048.002zm2.094 2.025z"
+                    />
+                  </svg>
+                </div>
+                <div>selectors</div>
+              </li>
+              <li>
+                <div>
+                  <a href="./style.css">see full css file</a>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="section shadowed textured">
+          <h2>See more</h2>
+          <div>
+            <p>Want to see some more of my work?</p>
+          </div>
+          <div class="portfolio-links">
+            <div><a href="./aaaa" class="github">my github account</a></div>
+            <div><a href="#" class="projects">my projects</a></div>
+          </div>
+        </div>
+      </div>
+      <div class="rightspace"></div>
+      <div class="footer">Copyrights 2k22 <br/> MichalSkrzynski</div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,232 @@
+@font-face {
+  font-family: Oswald;
+  src: url("Oswald-VariableFont_wght.ttf");
+}
+
+@font-face {
+  font-family: Manrope;
+  src: url("Manrope-VariableFont_wght.ttf");
+}
+
+@font-face {
+  font-family: Lobster;
+  src: url("Lobster-Regular.ttf");
+}
+
+:root {
+  --default-section-margin: 4rem;
+  --dark-section-color: #373e98;
+  --tricky-element-color: #f16775;
+  --cta-color: #fee36e;
+  --inactive-color: #ceb92c;
+  --text-color-dark-bg: white;
+  --text-color-white-bg: #2a2a2a;
+}
+
+body {
+  font-family: Oswald, sans-serif;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+.grid-layout {
+  margin-top: 3rem;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 10fr 1fr;
+}
+
+.header {
+  background-color: var(--tricky-element-color);
+  color: var(--text-color-dark-bg);
+
+  position: fixed; 
+  top: 0; 
+  width: 100%;
+  z-index: 100;
+}
+
+.header a {
+  text-decoration: none;
+  color: var(--text-color-dark-bg);
+}
+
+.bootstrapped {
+  position: relative;
+  left: -0.3rem;
+  top: -0.3rem;
+}
+
+.footer {
+  grid-column: 1 / 4;
+}
+
+nav {
+  display: flex;
+}
+
+nav h1 {
+  font-family: Lobster, sans-serif;
+  margin-left: 1rem;
+  color: var(--text-color-dark-bg);
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-left: auto;
+}
+
+.menu > div {
+  margin: 1rem;
+}
+
+nav li {
+  display: inline;
+  margin: 0px 1rem;
+}
+
+h2 {
+  text-align: center;
+  text-decoration: underline;
+}
+
+.shadowed {
+  -webkit-box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.75);
+}
+
+.textured {
+  background-color: #e5e5f7;
+  opacity: 0.95;
+  background-size: 10px 10px;
+  background-image: repeating-linear-gradient(45deg, #373e98 0, #474fc0 1px, #373e98 0, #373e98 50%);
+}
+
+.section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  margin-top: 4rem;
+}
+
+.section:nth-of-type(2n) {
+  background-color: var(--dark-section-color);
+  border-radius: 1rem;
+  padding: 1rem;
+
+  color: var(--text-color-dark-bg);
+}
+
+/* section hi-there */
+
+.hi-there {
+  width: 50%;
+}
+
+.hi-there > p {
+  line-height: 2;
+}
+
+.profile-picture {
+  margin-bottom: 3rem;
+  border-radius: 50%;
+}
+
+.hi-there > p + p {
+  text-align: right;
+}
+
+span.email-left::before {
+  content: "contact me: ";
+}
+
+span.email-left::after {
+  content: "@";
+}
+
+span.email-right::after {
+  content: "ail.com";
+}
+
+/* introduction section styles */
+
+.introduction {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 300px;
+}
+
+.introduction > div:nth-of-type(1) {
+  grid-column: 1 / 3;
+}
+
+.introduction-video {
+  padding: 1rem;
+}
+
+
+.this-page > h2::before {
+  content: '[ ';
+}
+
+.this-page > h2::after {
+  content: ' ]';
+}
+
+.this-page ul {
+  padding-left: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.this-page li {
+  list-style: none;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  align-content: center;
+  font-size: 1rem;
+}
+
+.this-page li > div {
+  margin: 0.2rem;
+}
+
+hr {
+  margin: 2rem;
+}
+
+.portfolio-links {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 40%;
+}
+
+.portfolio-links a, .this-page a {
+  display: block;
+  font-size: 1rem;
+  text-decoration: none;
+  border-radius: 1rem;
+  background-color: var(--cta-color);
+  padding: 1rem;
+  color: var(--text-color-white-bg);
+}
+
+.footer {
+  margin-top: var(--default-section-margin);
+  background-color: var(--dark-section-color);
+  color: var(--text-color-dark-bg);
+
+  text-align: center;
+  padding: 2rem;
+}
