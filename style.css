@@ -90,6 +90,13 @@ nav li {
   margin: 0px 1rem;
 }
 
+.flex-h-aligned-right {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+}
+
 h2 {
   text-align: center;
   text-decoration: underline;
